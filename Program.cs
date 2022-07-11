@@ -76,63 +76,37 @@
 [3 7 22 2 78] -> 76
 */
 
-int[] ThreeDigitArray3 (int size, int min, int max)
-{
-    Random rnd = new Random();
-    int[] array = new int[size];
-    for(int i = 0; i < size; i++)
-    array[i] = rnd.Next(min, max);
+// double[] ThreeDigitArray3 (double size, double min, double max)
+// {
+//     Random rnd = new Random();
+//     double[] array = new double[5];
+//     for(int i = 0; i < size; i++)
+//     array[i] = rnd.Next(0, 100);
     
-    Console.WriteLine(max -= min);
+//     return array;
+// }
 
-    return array;
-}
+// double[] DifferenceElementsArray (double[] array)
+// {
+//     double max = 0, min = 100, result = 0;        
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] > max) max = array[i];
+//         if (array[i] < min) min = array[i];
+//         result = max - min;    
+//     }
+//     Console.Write("Разницу между min и max: " + result);    
+//     return array;
+// }
 
-double[] DifferenceElementsArray (double[] array)
-{
-    double max = 0, min = 100, result = 0;
-            
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] > max) max = array[i];
-        if (array[i] < min) min = array[i];
-        result = max - min;
-    }
-          
-    return result;
-}
+// void ShowArray(double[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         Console.Write(" "+ array[i]);
+//     Console.WriteLine();
+                    
+// }
 
-void ShowArray(double[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-        Console.Write(" "+ array[i]);
-    Console.WriteLine();                
-}
-
-double[] myArray = DifferenceElementsArray(5);
-
-ShowArray(myArray);
-DifferenceElementsArray(5);
-
-//___________________________________
-
-// Random rnd = new Random();
-//             double[] d = new double[10];
-//             double max=0, min=100;
-//             for (int i = 0; i<d.Length; i++ )  d[i] = rnd.Next(100);
-//             for (int i = 0; i < d.Length; i++)
-//             {
-//                 if (d[i] > max) max = d[i];
-//                 if (d[i] < min) min = d[i];
-//             }
-           
-//                for (int i = 0; i < d.Length; i++) Console.Write(" "+d[i]);//выводим массив
-//                Console.WriteLine();
-//                  Console.WriteLine("max:  " + max);
-//                  Console.WriteLine("min  " +min);
-//                  Console.WriteLine("Разница максимального и минимального:  "+(max - min));
-//                 Console.ReadKey();   
-           
-    
-    
-
+// double[] myArray = ThreeDigitArray3(5, 100, 0);
+// ShowArray(myArray);
+// DifferenceElementsArray(myArray);
